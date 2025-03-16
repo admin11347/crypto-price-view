@@ -1,0 +1,117 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* App Container */
+.app {
+  width: 100%;
+  max-width: 1000px;
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #00c6ff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+  background: #2a2a2a;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.search-input:focus {
+  background: #333;
+  box-shadow: 0 0 8px rgba(0, 198, 255, 0.7);
+}
+
+/* Crypto Table */
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.crypto-table th {
+  background: #00c6ff;
+  color: #121212;
+  padding: 14px;
+  font-size: 16px;
+}
+
+/* Table Rows */
+.crypto-table td, .crypto-table th {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Table Row Styling */
+.crypto-table tbody tr {
+  background: #222;
+  transition: 0.3s;
+}
+
+.crypto-table tbody tr:hover {
+  background: #00c6ff;
+  color: #121212;
+  transform: scale(1.02);
+}
+
+/* Loading & Error Messages */
+.loading, .error {
+  font-size: 18px;
+  padding: 20px;
+  background: #ff4444;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .crypto-table th, .crypto-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
